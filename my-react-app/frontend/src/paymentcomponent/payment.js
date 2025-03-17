@@ -13,7 +13,7 @@ function Payment() {
 
   const handlePayment = async () => {
     try {
-      await axios.post('http://localhost:8000/user/book', {
+      await axios.post('https://tourist-87zn.onrender.com/user/book', {
         ...booking,
         cardDetails,
       });

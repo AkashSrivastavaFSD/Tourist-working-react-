@@ -12,7 +12,7 @@ function Adminsetting () {
   const handleChangePassword = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put('http://localhost:8000/admin/changepassword', {
+      const response = await axios.put('https://tourist-87zn.onrender.com/admin/changepassword', {
         email,
         oldPassword,
         newPassword,

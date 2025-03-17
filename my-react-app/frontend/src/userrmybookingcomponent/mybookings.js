@@ -39,7 +39,7 @@ function MyBookings() {
         }
 
         const response = await axios.get(
-          `http://localhost:8000/user/mybookings/${email}`
+          `https://tourist-87zn.onrender.com/user/mybookings/${email}`
         );
         if (response.data.length === 0) {
           setError("No bookings found.");
@@ -57,7 +57,7 @@ function MyBookings() {
 
   const handleCancelBooking = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/user/cancel/${id}`);
+      await axios.delete(`https://tourist-87zn.onrender.com/user/cancel/${id}`);
       alert("Booking canceled successfully!");
       setBookings(bookings.filter((booking) => booking._id !== id));
       onClose(); // Close the modal after successful cancellation

@@ -14,7 +14,7 @@ const ManageUser = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/admin/manage-users');
+        const response = await axios.get('https://tourist-87zn.onrender.com/admin/manage-users');
         setUsers(response.data);
       } catch (err) {
         setError('Failed to fetch users.');
@@ -32,7 +32,7 @@ const ManageUser = () => {
   // Delete user
   const handleDelete = async () => {
     try {
-      await axios.delete('http://localhost:8000/admin/manage-users', { data: { email: selectedUser } });
+      await axios.delete('https://tourist-87zn.onrender.com/admin/manage-users', { data: { email: selectedUser } });
       setUsers(users.filter((user) => user.email !== selectedUser));
       setSelectedUser(null);
       onClose(); // Close confirmation dialog after deletion

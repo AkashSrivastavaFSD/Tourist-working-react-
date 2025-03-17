@@ -23,7 +23,7 @@ function Registration() {
     e.preventDefault();
     //alert("Working");
     axios
-      .post("http://localhost:8000/user/create", {
+      .post("https://tourist-87zn.onrender.com/user/create", {
         ename: ename,
         email: email,
        // loc: loc,

@@ -47,7 +47,7 @@ function Bookymytour() {
     };
 
     try {
-      await axios.post('http://localhost:8000/user/book', bookingData);
+      await axios.post('https://tourist-87zn.onrender.com/user/book', bookingData);
       alert('Booking successful!');
       // Clear form
       setName("");

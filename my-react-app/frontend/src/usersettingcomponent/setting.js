@@ -12,7 +12,7 @@ const Setting = () => {
   const handleChangePassword = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.put('http://localhost:8000/user/changepassword', {
+      const response = await axios.put('https://tourist-87zn.onrender.com/user/changepassword', {
         email,
         oldPassword,
         newPassword,
