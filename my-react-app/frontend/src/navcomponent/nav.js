@@ -25,8 +25,7 @@ function Nav() {
               <Link to="/destination" className="dropdown-item">Destination</Link>
               <Link to="/booking" className="dropdown-item">Booking</Link>
               <Link to="/team" className="dropdown-item">Travel Guides</Link>
-              <Link to="/testimonial" className="dropdown-item">Testimonial</Link>
-              <Link to="/404" className="dropdown-item">404 Page</Link>
+              
             </div>
           </div>
           

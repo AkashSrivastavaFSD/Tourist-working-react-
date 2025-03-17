@@ -1,4 +1,7 @@
 import './App.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Header from './headercomponent/header';
 import Footer from './footercomponent/footer';
 import Nav from './navcomponent/nav';
