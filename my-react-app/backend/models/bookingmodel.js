@@ -1,4 +1,4 @@
-// backend/models/bookingModel.js
+
 
 import mongoose from 'mongoose';
 
