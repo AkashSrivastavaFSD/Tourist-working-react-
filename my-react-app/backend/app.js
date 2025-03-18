@@ -15,7 +15,7 @@ connectDB();
 const port = process.env.port || '8000';
 
 // Middleware setup
-app.use(cors({ credentials: true, origin: 'http://localhost:3000' })); // Allow frontend to access backend with cookies
+app.use(cors({ credentials: true, origin: '*' })); // Allow frontend to access backend with cookies
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
