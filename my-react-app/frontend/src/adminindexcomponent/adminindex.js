@@ -11,7 +11,7 @@ function Userindex() {
       <Heading as="h2" size="lg" mb={4}>
         {`Welcome, ${username}`}
       </Heading>
-      <Text fontSize="xl">User Index Page</Text>
+      <Text fontSize="xl"> This is Admin Panel</Text>
     </Box>
   );
 }
